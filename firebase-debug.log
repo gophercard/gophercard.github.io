@@ -1,0 +1,42 @@
+[debug] [2017-11-23T18:40:28.916Z] ----------------------------------------------------------------------
+[debug] [2017-11-23T18:40:28.919Z] Command:       /home/astephannie/.nvm/versions/node/v8.1.2/bin/node /home/astephannie/.nvm/versions/node/v8.1.2/bin/firebase deploy
+[debug] [2017-11-23T18:40:28.919Z] CLI Version:   3.15.3
+[debug] [2017-11-23T18:40:28.919Z] Platform:      linux
+[debug] [2017-11-23T18:40:28.919Z] Node Version:  v8.1.2
+[debug] [2017-11-23T18:40:28.919Z] Time:          Thu Nov 23 2017 13:40:28 GMT-0500 (PET)
+[debug] [2017-11-23T18:40:28.919Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-11-23T18:40:28.930Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-11-23T18:40:28.930Z] > authorizing via signed-in user
+[debug] [2017-11-23T18:40:28.932Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-11-23T18:40:28.932Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/ENJVA_gdilb-C5aFjVwxVYqm6FzS2AZ2o98HvNh8tQUmztQEpahS4DYYTBAuczN0',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu Nov 23 2017 13:40:28 GMT-0500 (PET)
+[debug] [2017-11-23T18:40:29.114Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-23T18:40:29.126Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/gophercard-dev  
+ Thu Nov 23 2017 13:40:29 GMT-0500 (PET)
+[debug] [2017-11-23T18:40:29.501Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-23T18:40:29.502Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/gophercard-dev/tokens  
+ Thu Nov 23 2017 13:40:29 GMT-0500 (PET)
+[debug] [2017-11-23T18:40:29.975Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'gophercard-dev'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing app directory for upload...
+[debug] [2017-11-23T18:40:30.632Z] TypeError: no files or directories specified
+    at Object.module.exports (/home/astephannie/.nvm/versions/node/v8.1.2/lib/node_modules/firebase-tools/node_modules/tar/lib/create.js:19:11)
+    at module.exports (/home/astephannie/.nvm/versions/node/v8.1.2/lib/node_modules/firebase-tools/lib/prepareUpload.js:21:14)
+    at module.exports (/home/astephannie/.nvm/versions/node/v8.1.2/lib/node_modules/firebase-tools/lib/deploy/hosting/deploy.js:23:10)
+    at _chain (/home/astephannie/.nvm/versions/node/v8.1.2/lib/node_modules/firebase-tools/lib/deploy/index.js:22:45)
+    at /home/astephannie/.nvm/versions/node/v8.1.2/lib/node_modules/firebase-tools/lib/deploy/index.js:72:12
+    at tryCatch (/home/astephannie/.nvm/versions/node/v8.1.2/lib/node_modules/firebase-tools/node_modules/rsvp/dist/rsvp.js:525:12)
+    at invokeCallback (/home/astephannie/.nvm/versions/node/v8.1.2/lib/node_modules/firebase-tools/node_modules/rsvp/dist/rsvp.js:538:13)
+    at /home/astephannie/.nvm/versions/node/v8.1.2/lib/node_modules/firebase-tools/node_modules/rsvp/dist/rsvp.js:606:14
+    at flush (/home/astephannie/.nvm/versions/node/v8.1.2/lib/node_modules/firebase-tools/node_modules/rsvp/dist/rsvp.js:2415:5)
+    at _combinedTickCallback (internal/process/next_tick.js:95:7)
+[error] 
+[error] Error: An unexpected error has occurred.
