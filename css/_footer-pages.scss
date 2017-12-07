@@ -1,0 +1,38 @@
+@import "variables";
+
+section.footer-page{
+	margin: 130px 0 80px;
+	
+	@media#{$down-xs}{
+		margin: 80px 0 50px;
+	}
+
+	h2{
+		margin-bottom: 50px;
+	}
+
+	h6{
+		color: $black;
+		margin: 12px 0; 
+		font-weight: 600;
+		font-size: 14px;
+	}
+
+	p{
+		color: $black;
+		line-height: 1.6em;
+		font-weight: 300;
+		margin-bottom: 10px;
+	}
+
+	ol,
+	ul{
+		padding-left: 30px;
+
+		li{
+			font-weight: 300;
+			margin-bottom: 10px;
+			padding-left: 5px;
+		}
+	}
+}

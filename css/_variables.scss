@@ -1,0 +1,113 @@
+// FONT
+
+$brand-font: 'Poppins', sans-serif;
+
+// COLORS
+
+$black: #121212;
+$brand-color: #26c9ff;
+$white: #feffff;
+$white-alpha: rgba(255,255,255,0.2);
+$blue: #4a76fd;
+$green: #00dfa9;
+$yellow: #ffc300;
+
+$gray-text-9: #c9c9c9;
+$gray-text-6: #c6c6c6;
+$gray-light: #e8e8e8;
+$gray-dark: #7b7b7b;
+$gray-subtitle: #cfcfcf;
+
+// BREAKPOINTS - RESPONSIVE
+
+$phone: "(min-width: 0px) and (max-width: 370px)";
+$tablet: "(min-width:  768px) and (max-width: 991px)";
+$desktop: "(min-width: 1024px)";
+
+$down-xs: "(min-width: 0px) and (max-width: 767px)";
+
+
+// ANIMATIONS
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  
+  33% {
+    transform: scale(0.9);
+  }
+  
+  66% {
+    transform: scale(1.1);
+  }
+  
+  100% {
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes rotation {
+	from {
+			-webkit-transform: rotate(0deg);
+	}
+	to {
+			-webkit-transform: rotate(359deg);
+	}
+}
+
+@-webkit-keyframes orbit {
+	from {
+		-webkit-transform: rotate(0deg) translateX(-160px);
+				transform: rotate(0deg) translateX(-160px);
+	}
+
+	to {
+		-webkit-transform: rotate(360deg) translateX(-160px);
+				transform: rotate(360deg) translateX(-160px);
+	}
+}
+
+@keyframes orbit {
+	from {
+		-webkit-transform: rotate(0deg) translateX(-160px);
+				transform: rotate(0deg) translateX(-160px);
+	}
+
+	to {
+		-webkit-transform: rotate(360deg) translateX(-160px);
+				transform: rotate(360deg) translateX(-160px);
+	}
+}
+
+@-webkit-keyframes spin {
+	from {
+		-webkit-transform: translateX(-300px);
+				transform: translateX(-300px);
+	}
+
+	to {
+		-webkit-transform: translateX(0px);
+				transform: translateX(0px);
+	}
+}
+
+@keyframes spin {
+	from {
+		-webkit-transform: translateX(-300px);
+				transform: translateX(-300px);
+	}
+
+	to {
+		-webkit-transform: translateX(0px);
+				transform: translateX(0px);
+	}
+}
+
+// MIXINS
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
